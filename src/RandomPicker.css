@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+}
+div.base{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    font-size: 1.2em;
+}
+div.control{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+div.data{
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+textarea#recorded-data{
+    display: none;
+}
+h2{
+    background-color: hsl(240, 100%, 70%);
+    color: white;
+    margin: 0;
+    padding: 10px 0px;
+    text-align: center;
+    width: 100%;
+    height:30px;
+}
+button{
+    font-size: 1.2em;
+    width: 20%;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 10%;
+    background-color: tomato;
+    color: white;
+    border-color: tomato;
+    cursor: pointer;
+}
+button:not(:enabled){
+    background-color: hsl(9, 100%, 74%);
+    cursor: default;
+}
